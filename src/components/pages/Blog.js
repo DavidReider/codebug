@@ -14,8 +14,7 @@ export default function Blog() {
                 mainImage{
                     asset->{
                         _id,
-                        url
-                        
+                        url     
                     },
                     alt
                 }
@@ -31,16 +30,16 @@ export default function Blog() {
                 <h2>A Dev's Journey</h2>
                 <div>
                     {postData && postData.map((post, index) => (
-                    <article>
-                        <Link to={"/posts/" + post.slug.current} key={post.slug.current} >
-                            <span>
-                                <img src={post.mainImage.asset.url} alt={post.mainImage.alt} />
-                                <span>
-                                    <h3>{post.title}</h3>
+                        <article>
+                            <Link to={"/blog/" + post.slug.current} key={post.slug.current} >
+                                <span className="image" key={index}>
+                                    <img src={post.mainImage.asset.url} alt={post.mainImage.alt} />
+                                    <span>
+                                        <h3>{post.title}</h3>
+                                    </span>
                                 </span>
-                            </span>
-                        </Link>
-                    </article>
+                            </Link>
+                        </article>
                     ))}
                 </div>
             </section>
