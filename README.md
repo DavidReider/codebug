@@ -1,4 +1,4 @@
-CodeBug v0.0.1
+CodeBug v0.1
 
 This is my first attempt at creating a "blog" website revolving around code!
 
