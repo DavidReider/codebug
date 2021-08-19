@@ -22,6 +22,10 @@ function App() {
         <Route path='/blog' component={Blog} />
         <Route path='/products' component={Products} />
         <Route path='/sign-up' component={SignUp} />
+        <Route path='/manage' component={() => { 
+            window.location.href = 'https://codebug.sanity.studio/desk'; 
+            return null;
+        }} />
       </Switch>
       <Footer />
     </Router>
