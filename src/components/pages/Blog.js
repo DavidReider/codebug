@@ -19,7 +19,11 @@ export default function Blog() {
                         url     
                     },
                     alt
-                }
+                },
+                excerpt,
+                "name": author->name,
+                publishedAt,
+                categories,
             }`)
             .then((data) => setPostData(data))
             .catch(console.error);
@@ -36,16 +40,17 @@ export default function Blog() {
                 
                 <div className="posts">
                     {postData && postData.map((post, index) => (
-                        <article>
+                        <article key={index}>
                             <Link to={"/blog/" + post.slug.current} key={post.slug.current} >
-                                <span className="indv-post" key={index}>
+                                <span className="indv-post">
                                     <img className="image" src={post.mainImage.asset.url} alt={post.mainImage.alt} />
                                     
                                     <span className="post-title">
                                         <h2>{post.title}</h2>
+                                        <span>{post.excerpt}</span>
                                         <span>
-                                            <h3>Johnny Appleseed</h3>
-                                            <h3>August 20th, 2021</h3> {/* pull author, date, tags (if they exist) */}
+                                            <h3>{post.name}</h3>
+                                            <h3>{post.publishedAt}</h3> {/* pull author, date, tags (if they exist) */}
                                         </span>
                                     </span>
                                     
