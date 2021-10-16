@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import sanityClient from "../client.js";
 import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react";
+import './SinglePost.css';
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source){
@@ -37,17 +38,20 @@ export default function SinglePost() {
     <main>
       <article>
         <header>
-          <div>
-            <div>
+          <div class="container">
+            <div class="blog-info">
               <h1>{singlePost.title}</h1>
-              <div><img src={urlFor(singlePost.authorImage).url()} alt={singlePost.name} /></div>
-              <p>{singlePost.name}</p>
+              <p>By: {singlePost.name}</p>
             </div>
           </div>
-          <img src={singlePost.mainImage.asset.url} alt={singlePost.title} />
+          <div className="container">
+            <img class="main-img" src={singlePost.mainImage.asset.url} alt={singlePost.title} />
+          </div>
         </header>
-        <div>
-          <BlockContent blocks={singlePost.body} projectId="t9i8pgai" dataset="production" />
+        <div class="content">
+          <div class="child">
+            <BlockContent blocks={singlePost.body} projectId="t9i8pgai" dataset="production" />
+          </div>
         </div>
       </article>
     </main>

@@ -1,6 +1,5 @@
 import React, { useState, useEffect }  from 'react';
 import '../../App.css';
-import { Button } from '../Button';
 import { Link } from 'react-router-dom';
 import sanityClient from "../../client.js";
 
@@ -50,7 +49,7 @@ export default function Blog() {
                                         <span>{post.excerpt}</span>
                                         <span>
                                             <h3>{post.name}</h3>
-                                            <h3>{post.publishedAt}</h3> {/* pull author, date, tags (if they exist) */}
+                                            <h3>{post.publishedAt}</h3>
                                         </span>
                                     </span>
                                     
@@ -59,13 +58,6 @@ export default function Blog() {
                         </article>
                     ))}
                 </div>
-
-                <div className="load-more">
-
-                    <Button className="btns" buttonStyle='btn--outline' buttonSize='btn--large'>Load More ...</Button>
-
-                </div>
-
             </section>
         </main>
     ); 
