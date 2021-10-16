@@ -14,13 +14,13 @@ function Cards() {
             <div className="cards__container">
                 <div className="cards__wrapper">
                     <ul className="cards__items">
-                        <CardItem src={img9} text="Explore the wonderful uses of Technology" label="Technology" path="/services"/>
-                        <CardItem src={img2} text="Just how much does social media affect your productivity?" label="Productivity" path="/services"/>
+                        <CardItem src={img9} text="Explore the wonderful uses of Technology" label="Technology" path="/blog"/>
+                        <CardItem src={img2} text="Just how much does social media affect your productivity?" label="Productivity" path="/blog"/>
                     </ul>
                     <ul className="cards__items">
-                        <CardItem src={img3} text="Phones are destroying our productivty" label="Productivity" path="/services"/>
-                        <CardItem src={img4} text="Boosting your mood with music, ultimately increasing productivity" label="Mood" path="/products"/>
-                        <CardItem src={img8} text="Bitcoin, Bitclout, and other Cryptos are taking over" label="Crypto" path="/sign-up"/>
+                        <CardItem src={img3} text="Phones are destroying our productivty" label="Productivity" path="/blog"/>
+                        <CardItem src={img4} text="Boosting your mood with music, ultimately increasing productivity" label="Mood" path="/blog"/>
+                        <CardItem src={img8} text="Bitcoin, Bitclout, and other Cryptos are taking over" label="Crypto" path="/blog"/>
                     </ul>
                 </div>
             </div>

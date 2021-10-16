@@ -3,7 +3,6 @@ import Navbar from './components/Navbar';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Home from './components/pages/Home';
 import Blog from './components/pages/Blog';
-import Products from './components/pages/Products';
 import SignUp from './components/pages/SignUp';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
@@ -20,7 +19,6 @@ function App() {
         <Route path="/" exact component={Home} />
         <Route path='/blog/:slug' component={SinglePost} />
         <Route path='/blog' component={Blog} />
-        <Route path='/products' component={Products} />
         <Route path='/sign-up' component={SignUp} />
         <Route path='/manage' component={() => { 
             window.location.href = 'https://codebug.sanity.studio/desk'; 
