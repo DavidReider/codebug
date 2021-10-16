@@ -1,4 +1,4 @@
-CodeBug v0.1
+CodeBug v0.2
 
 This is my first attempt at creating a "blog" website revolving around code!
 
@@ -11,3 +11,5 @@ Near future goals:
 - Allow users to create accounts/sign in
 - Learn about how to create a 'CMS' like WordPress, where I (or a user) can create a blog post after signing in so I do not have to create a new page for each blog post
 - Learn more about useState();
+
+Live Demo: https://codebug.netlify.app/
