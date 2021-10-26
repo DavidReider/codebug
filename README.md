@@ -2,6 +2,8 @@ CodeBug v0.2
 
 This is my first attempt at creating a "blog" website revolving around code!
 
+Initial version was just a mock up without any backend connection. Sanity.IO was added later so slowly integrating real articles.
+
 So far, I've learned about useState(), components, routing, and much more! 
 
 I am still learning. Hopefully, as I learn more concepts, I am able to iterate over this and refine it until it can be a fully fledged blogging website.
